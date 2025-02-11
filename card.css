@@ -23,7 +23,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: row; /* Default layout: cards are placed side by side */
+  flex-direction: row;
 }
 
 .card {
@@ -306,16 +306,15 @@ body {
   }
 }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
   .container {
-    flex-direction: row; /* Change to column layout on smaller screens */
-    height: 100vh; /* Allow the container to grow in height */
+    flex-direction: row;
+    height: 100vh;
   }
 
   .card {
-    width: 60%; /* Adjust card width for smaller screens */
-    height: 80%; /* Allow cards to grow in height */
-    margin: 10px 0; /* Adjust margin for stacked layout */
+    width: 60%;
+    height: 80%;
+    margin: 10px 0;
   }
 }
