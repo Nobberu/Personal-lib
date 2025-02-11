@@ -309,13 +309,13 @@ body {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Change to column layout on smaller screens */
-    height: auto; /* Allow the container to grow in height */
+    flex-direction: row; /* Change to column layout on smaller screens */
+    height: 100vh; /* Allow the container to grow in height */
   }
 
   .card {
-    width: 90%; /* Adjust card width for smaller screens */
-    height: auto; /* Allow cards to grow in height */
+    width: 60%; /* Adjust card width for smaller screens */
+    height: 80%; /* Allow cards to grow in height */
     margin: 10px 0; /* Adjust margin for stacked layout */
   }
 }
