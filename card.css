@@ -22,10 +22,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row; /* Default layout: cards are placed side by side */
 }
 
 .card {
-  width: 100%;
+  width: 25%;
   height: 80%;
   margin: 20px;
   display: flex;
@@ -301,5 +303,19 @@ body {
   }
   25% {
     opacity: 1;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Change to column layout on smaller screens */
+    height: auto; /* Allow the container to grow in height */
+  }
+
+  .card {
+    width: 90%; /* Adjust card width for smaller screens */
+    height: auto; /* Allow cards to grow in height */
+    margin: 10px 0; /* Adjust margin for stacked layout */
   }
 }
