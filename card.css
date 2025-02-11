@@ -232,6 +232,7 @@ body {
 .headline {
   width: 100%;
   padding: 100px 0 0 10px;
+  overflow: hidden;
 }
 
 .text-row {
